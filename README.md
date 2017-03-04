@@ -1,0 +1,2 @@
+# Numerical-Methods
+This is a repository of a variety of numerical analysis methods that I have coded for my mathematics classes, such as Lagrange interpolation, using Chebyshev polynomials to find optimal node spacing, iterative techniques to solve NxN linear systems (Gauss-Seidel, Jacobi, SOR), singular value decomposition, principal component analysis dimensionality reduction, and more. The theory behind almost all of these algorithms can be found in Burden and Faires' Numerical Analysis 9th edition textbook. 
