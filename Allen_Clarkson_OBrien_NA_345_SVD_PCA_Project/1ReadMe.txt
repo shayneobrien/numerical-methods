@@ -1,13 +1,14 @@
-Name: Stephanie Allen, David Clarksone, and Shayne O'Brien
+Authors: Stephanie Allen, David Clarksone, and Shayne O'Brien
 Course: Math 345 (Dr Haddad)
 Due Date: Sunday, 12/11/2016 by 12pm
 
-This folder contains multiple scripts, and here is a short description
+This folder contains multiple scripts that implement SVD/PCA from the 
+ground-up, without use of built in functions. Here is a short description
 of their content:
 
 1) Matrix_SVD_Decomp_with_PCA - This script performs SVD decomp
 on the data entered into the data_NA_Project script (the data_NA_project
-script is called), and then it performs PCA on the data as well.  
+script is called), and then it performs PCA on the data as well. 
 a) data_NA_Project loads data from the SNAP_Data_2.csv file included
 in this folder.  
 b) The SNAP_Data_2.csv file has no headings.  Therefore, if you would
