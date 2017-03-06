@@ -1,0 +1,95 @@
+format long % put format on long for precision and outputs.
+close all; clear all; % close all plots, clear all variables.
+
+%% Part (a)
+% Begin by coding Newton's method and saving it as Newton_YourName. It
+% should perform Newton's Method. Your program should input an initial
+% guess, p, a tolerance TOL, and N, a maximum number of iterates. The
+% program should output a "table" with the number of the iterate in the
+% first column, followed by the approximations to the fixed point of g
+% (root of f) in the next column, followed by the absolute Cauchy error,
+% and last the relative Cauchy error.
+
+Input the number we will find the inverse of, a: 19
+Input maximum number of iterates, N: 30
+Input initial approximation, Po: 0.04
+Input tolerance level, TOL: 1e-12
+    Iteration Number	      Pn	        |(Pn - Pn-1)/Pn|       |Pn - Pn-1| 
+   1.000000000000000   0.040000000000000                 NaN                 NaN
+   2.000000000000000   0.049600000000000   0.193548387096774   0.009600000000000
+   3.000000000000000   0.052456960000000   0.054462934947050   0.002856960000000
+   4.000000000000000   0.052630999603610   0.003306788868165   0.000174039603610
+   5.000000000000000   0.052631578940991   0.000011007410253   0.000000579337382
+   6.000000000000000   0.052631578947368   0.000000000121166   0.000000000006377
+
+The approximate fixed point is p = 0.05263158, reached in 6 iterations.
+
+%% Part (c)
+% Apply Newton's Method to the function f(x) found in Part (b), and use the
+% resulting g(x) to find x = 1/a with no division and an absolute error
+% less than 10^-12 for a = 19.
+
+Input the number we will find the inverse of, a: 19
+Input maximum number of iterates, N: 30
+Input initial approximation, Po: 0.04
+Input tolerance level, TOL: 1e-12
+
+    Iteration Number	      Pn	    |(Pn - Pn-1)/Pn|	   |Pn - Pn-1| 
+   1.000000000000000   0.040000000000000                 NaN                 NaN
+   2.000000000000000   0.049600000000000   0.193548387096774   0.009600000000000
+   3.000000000000000   0.052456960000000   0.054462934947050   0.002856960000000
+   4.000000000000000   0.052630999603610   0.003306788868165   0.000174039603610
+   5.000000000000000   0.052631578940991   0.000011007410253   0.000000579337382
+   6.000000000000000   0.052631578947368   0.000000000121166   0.000000000006377
+
+The approximate fixed point is p = 0.05263158, reached in 6 iterations.
+
+%% Part (d)
+%Modify your code for Newton's Method to apply the Secant Method to your
+% function from Part (b) with a = 21. You may create a completely new
+% script or m-file to do this, or place it in a new cell following Newton's
+% Method.
+
+Input the number for which we will find the inverse: 21
+Input maximum number of iterates, N: 30
+Input initial approximation, Po: -0.1
+Input initial approximation, P1: 0.1
+Input tolerance level, TOL: 1e-12
+
+    Iteration Number	      Pn	    |(Pn - Pn-1)/Pn|	   |Pn - Pn-1| 
+   1.000000000000000  -0.100000000000000                 NaN                 NaN
+   2.000000000000000   0.100000000000000   1.100000000000000   0.052380952380952
+   3.000000000000000   0.047619047619048                   0                   0
+
+The approximate fixed point is p = 0.04761905, reached in 3 iterations.
+
+%% Part (e)
+%Use Steffensen's Algorithm (which modifies Aitken's D^2) to speed up the
+% convergence of Part (c) by first finding a new fixed point function,
+% g(x), that is not the same as the one found in Part (b) for Newton's
+% Method. Why wouldn't you want to apply Steffensen's algorithm to Newton's
+% Method?
+
+Input the number for which we will find the inverse: 19
+Input maximum number of iterates, N: 30
+Input initial approximation, Po: 0.04
+Input tolerance level, TOL: 1e-12
+    Iteration Number	       P0    		   P1 		       P2 	    |(Pn - Pn-1)/Pn|	|Pn - Pn-1| 
+   Columns 1 through 5
+
+   1.000000000000000   0.040000000000000   0.049600000000000   0.052456960000000                 NaN
+   2.000000000000000   0.053667425968109   0.052611192345411   0.052631571050711   0.254668930390492
+   3.000000000000000   0.052631185311463   0.052631578944424   0.052631578947368   0.019688719729828
+   4.000000000000000   0.052631578947368   0.052631578947368   0.052631578947368   0.000007479082198
+   5.000000000000000   0.052631578947368                 NaN                 NaN   0.000000000000000
+
+  Column 6
+
+                 NaN
+   0.013667425968109
+   0.001036240656646
+   0.000000393635905
+   0.000000000000000
+
+The approximate fixed point is p = 0.05263158, reached in 5 iterations.
+diary off
