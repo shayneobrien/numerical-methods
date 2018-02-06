@@ -15,7 +15,7 @@
 % input into the program.
 
 format short; % set format to 4 decimal places
-data_Snoopy; % load in the data from data_Snoopy.m Matlab file
+data; % load in the data from data.m Matlab file
 
 % This code will construct the cubic spline interpolant S for the function
 % f defined at the numbers x1 < x2 < ... < xn, satisfying 
