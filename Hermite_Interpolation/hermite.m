@@ -181,7 +181,7 @@ Hdoubleprime = @(x)((4*x)/3 - (28*x*(2*x - 6))/225 - (29*x*(x - 3)^2)/1125 - (29
 
 % Running the Bisection Method by using the code we see that there is a
 % critical point at the value x = 12.37184029
-Bisect_OBrien(Hdoubleprime, 12,13, 1e-13,50)
+bisect(Hdoubleprime, 12,13, 1e-13,50)
 
 % Therefore, a maximum occurs at x = 12.37184029. Plugging this into our
 % H'(x) and print out the result:
