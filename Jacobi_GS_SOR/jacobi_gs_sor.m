@@ -45,7 +45,7 @@ format long; % change format to long for greater precision
 
 
 clear all; % clear any existing variables
-Data_JGS_OBrien; % uncomment the data you would like to use in the data file
+data; % uncomment the data you would like to use in the data file
 TOL = input ('Enter to the COMMAND WINDOW, TOL,  the tolerance \n'); % TOL allows us to specify when we should stop with the iterations
 N = input ('Enter to the COMMAND WINDOW, N,  the maximum number of iterations \n'); % set maximum number of iterations, so if it doesnt converge and never gets to limit the program will stop
 
