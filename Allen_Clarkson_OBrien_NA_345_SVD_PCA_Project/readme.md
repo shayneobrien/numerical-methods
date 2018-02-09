@@ -1,4 +1,4 @@
-Authors: Stephanie Allen, David Clarksone, and Shayne O'Brien
+Authors: Shayne O'Brien, Stephanie Allen, David Clarkson
 Course: Math 345 (Dr Haddad)
 Due Date: Sunday, 12/11/2016 by 12pm
 
