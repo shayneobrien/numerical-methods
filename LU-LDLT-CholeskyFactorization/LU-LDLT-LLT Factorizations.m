@@ -29,7 +29,7 @@ format long; % set format to long
 % OUTPUT: the entires l(i,j), 1<=j<=i, 1<=i<=n of l and the entries u(i,j),
 % i<=j<=n, 1 <=i<=n of U.
 
-Section6AlgsData_OBrien; % load in the data
+data; % load in the data
 l = [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1]; %the diagonal of the lower triangular matrix all set to 1
 u(1,1) = a(1,1)./l(1,1); % sumelect l(1,1) and u(1,1) satisfying l(1,1)*u(1,1) == a(1,1)  
                          % i.e., set the first value of u
