@@ -128,7 +128,7 @@ end % end while loop
 hold on; % so we can compare the FP Method to the Bisect Method by graphing both on the same graph.
 f = @(x)( (98.1*x - 981*(1-exp(-x/10)) - 1000) ); % rewrite function for foot-finding problem using Bisection Method by subtracting 1000 from both sides
                                                   % of the equation to get 0 = 98.1*x - 981(1-exp(-x/10)). We will solve for x
-Bisect_OBrien( f, 10, 30, 1e-14, 100); % run Bisection Method, where:
+bisect( f, 10, 30, 1e-14, 100); % run Bisection Method, where:
                                        % f = (98.1*x - 981*(1-exp(-x/10)) - 1000)
                                        % [a,b] = [10,30]
                                        % TOL = 1e-14
