@@ -42,7 +42,7 @@
     % can now proceed with the computation:
     close all; clear all; % close plots and clear variables from previous problem.
     
-    Bisect_OBrien( @(x)exp(x)-2-cos(exp(x)-2), 0.5, 1.5, 10^-5, 25)
+    bisect( @(x)exp(x)-2-cos(exp(x)-2), 0.5, 1.5, 10^-5, 25)
     % Answer: The root is approximately p = 1.00762177.
 
 
@@ -53,25 +53,25 @@
 %% Exercise 2.1.11: a
 % [-3, 2.5]
     close all; clear all;
-    Bisect_OBrien( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -3, 2.5, 10^-5, 30)
+    bisect( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -3, 2.5, 10^-5, 30)
     % Answer: The root is approximately p = 2.00000048.
 
 %% Exercise 2.1.11: b
 % [-2.5, 3]
     close all; clear all;
-    Bisect_OBrien( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -2.5, 3, 10^-5, 30)
+    bisect( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -2.5, 3, 10^-5, 30)
     % Answer: The root is approximately p = -2.00000048.
 
 %% Exercise 2.1.11: c
 % [-1.75, 1.5]
     close all; clear all;
-    Bisect_OBrien( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -1.75, 1.5, 10^-5, 30)
+    bisect( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -1.75, 1.5, 10^-5, 30)
     % Answer: The root is approximately p = -0.99999714.
 
 %% Exercise 2.1.11: d
 % [-1.5, 1.75]
     close all; clear all;
-    Bisect_OBrien( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -1.5, 1.75, 10^-5, 30)
+    bisect( @(x)(x+2)*(x+1)*x*((x-1)^3)*(x-2), -1.5, 1.75, 10^-5, 30)
     % Answer: The root is approximately p = 0.99999714.
 
 %% Exercise 2.1.13
@@ -82,6 +82,6 @@
     % By adding 25 to both sides and then taking the cube root, we get 
     % x = 25^(1/3). We will consider the interval [2,3]. Then,
     close all; clear all;
-    Bisect_OBrien( @(x)x^3 - 25, 2, 3, 10^-5, 30)
+    bisect( @(x)x^3 - 25, 2, 3, 10^-5, 30)
     % Answer: The root is approximately p = 2.92401886. Therefore, an
     % approximation to 25^(1/3) is 2.92401886.
