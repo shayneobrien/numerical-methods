@@ -15,7 +15,7 @@
 
 
 %% Function to compute the Bisection Method
-function Bisect_OBrien( f, a, b, TOL, N )
+function bisect( f, a, b, TOL, N )
 
 %Given the function f, left endpoint a, right endpoint b, tolerance threshold TOL, 
 % and maximum number of iterations to be computed N, this % function will
